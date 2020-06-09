@@ -4,15 +4,11 @@
 {% block title %} Administracao {% endblock %}
 
 {% block main %}
-    <h3>Novo cliente</h3>
+    <h3>Novo Documento</h3>
     <p> {{ request.session.message }}</p>
     <form method="POST" enctype="multipart/form-data">
         {% csrf_token %}
         {{ form|bootstrap }}
-        <a href="{% url 'new_document' %}" class="btn btn-primary document">Adicionar Documento</a>
-        <br>
-        <br>
         <button type="submit" class="btn btn-primary">Salvar</button>
     </form>
-
 {% endblock %}

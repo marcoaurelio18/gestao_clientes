@@ -5,6 +5,20 @@
 {% block main %}
 
     <div class="row">
+        <div class="col-4">
+
+        </div>
+        <form class="form-inline">
+            <div class="form-group">
+                <input class="form-control" name="pesquisa" placeholder="Digite aqui sua busca">
+            </div>
+            <button type="submit" class="btn btn-primary">Pesquisar</button>
+        </form>
+    </div>
+
+<br>
+
+    <div class="row">
         <div class="col">
 
         </div>
@@ -14,8 +28,8 @@
             <ul class="list-group">
                 {% for person in persons %}
                     <li class="list-group-item">
-                        <a href="{% url 'persons_update' person.id %}">{{ person.nome_completo|title }}</a>
-                        <a href="{% url 'persons_delete' person.id %}" class="trash-item">
+                        <a href="{% url 'person_update' person.id %}">{{ person.nome_completo|title }}</a>
+                        <a href="{% url 'person_delete' person.id %}" class="trash-item">
                             <i class="fa fa-trash" aria-hidden="true"></i>
                         </a>
                     </li>
