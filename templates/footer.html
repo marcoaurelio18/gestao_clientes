@@ -1,0 +1,39 @@
+{% load my_tags %}
+
+
+<footer>
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12 segment-one">
+                    <h3>Sobre nos</h3>
+                    <p>Sistema basico para teste</p>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 segment-two">
+                    <h2>Sistema</h2>
+                    <ul>
+                        <li><a href="{% url 'home' %}">Home</a></li>
+                        <li><a href="{% url 'person_list' %}">Clientes</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 segment-three">
+                    <h2>Siga agente</h2>
+                    <p>Nos siga pelas redes sociais e mantenha-se atualizado</p>
+                    <a href="/www.facebook.com/"><i class="fa fa-facebook"></i></a>
+                    <a href="/www.twitter.com/explore"><i class="fa fa-twitter"></i></a>
+                    <a href="/www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+                    <a href="/br.pinterest.com/"><i class="fa fa-pinterest"></i></a>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 segment-four">
+                    <h2>A empresa</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3730.941509643897!2d-42.88085045014389!3d-20.75316466972188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa367ebf8e87b1f%3A0xa0b268501d87d2a1!2sEdif%C3%ADcio%20Alphaville%2C%20R.%20Dr.%20Milton%20Bandeira%2C%20346%20-%20S%C3%A3o%20Sebastiao%2C%20Vi%C3%A7osa%20-%20MG%2C%2036570-000!5e0!3m2!1spt-BR!2sbr!4v1591740502808!5m2!1spt-BR!2sbr"width="100%" height="100" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <p id="hora_server">
+                        {% current_time "%d-%m-%Y %I:%M %p" as the_time %}
+                        {{ the_time }}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p class="footer-bottom-text">All Right reserved by Marco Aurélio</p>
+</footer>
