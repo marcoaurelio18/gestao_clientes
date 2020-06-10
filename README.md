@@ -13,7 +13,7 @@ Para configurar a aplicação no windows:
 2- rode o comando 'python -m venv venv' para criar uma maquina virtual 
 3- rode o comando 'venv\Scrpits\activate' 
 4- Agora, crie um banco de dados MySQL para a aplicação em si. Caso queira usar um existente, nao precisa seguir esse passo. Em outro  terminal, 
-execute os comando: 
+execute os comandos: 
 4.1- 'mysql -u root -p' 
 4.1.1 - Digite a senha do seu MySQL Server 
 4.2- 'CREATE DATABASE db_mysite;' 
@@ -51,7 +51,7 @@ Para configurar a aplicação no linux\Mac Os:
 2- rode o comando 'python -m venv venv' para criar uma maquina virtual 
 3- rode o comando '. venv\bin\activate' 
 4- Agora, crie um banco de dados MySQL para a aplicação em si. Caso queira usar um existente, nao precisa seguir esse passo. Em outro  terminal, 
-execute os comando: 
+execute os comandos: 
 4.1- 'mysql -u root -p' 
 4.1.1 - Digite a senha do seu MySQL Server 
 4.2- 'CREATE DATABASE db_mysite;' 
