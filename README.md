@@ -11,7 +11,7 @@ Data e hora no rodapé do site, é de acordo com a maquina em que o servidor est
 Para configurar a aplicação no windows: 
 1- Abra o terminal e va para o diretorio da aplicação 
 2- rode o comando 'python -m venv venv' para criar uma maquina virtual 
-3- rode o comando 'venv\Scrpits\activate' 
+3- rode o comando 'venv\Scrpits\activate' para ativá-la 
 4- Agora, crie um banco de dados MySQL para a aplicação em si. Caso queira usar um existente, nao precisa seguir esse passo. Em outro  terminal, 
 execute os comandos: 
 4.1- 'mysql -u root -p' 
@@ -49,7 +49,7 @@ Dessa forma, ao utilizar o comando 'Esqueci minha senha' da aplicação, chegar�
 Para configurar a aplicação no linux\Mac Os: 
 1- Abra o terminal e va para o diretorio da aplicação 
 2- rode o comando 'python -m venv venv' para criar uma maquina virtual 
-3- rode o comando '. venv\bin\activate' 
+3- rode o comando '. venv\bin\activate' para ativá-la 
 4- Agora, crie um banco de dados MySQL para a aplicação em si. Caso queira usar um existente, nao precisa seguir esse passo. Em outro  terminal, 
 execute os comandos: 
 4.1- 'mysql -u root -p' 
