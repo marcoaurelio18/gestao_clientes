@@ -1,0 +1,26 @@
+<style>
+    .test {
+        color: red;
+    }
+</style>
+
+<h1 class="test">Relatorio de clientes</h1>
+<br>
+<h2>Numero de clientes: {{ num_pessoas }}</h2>
+<table>
+  <tr>
+    <td>Id</td>
+    <td>Nome</td>
+    <td>Idade</td>
+    <td>Bio</td>
+  </tr>
+
+  {% for pessoa in pessoas %}
+      <tr>
+        <td>{{ pessoa.id }}</td>
+        <td>{{ pessoa.nome_completo }}</td>
+        <td>{{ pessoa.age }}</td>
+        <td>{{ pessoa.bio }}</td>
+      </tr>
+  {% endfor %}
+</table>

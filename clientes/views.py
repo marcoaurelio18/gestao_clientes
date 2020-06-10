@@ -2,6 +2,12 @@ from django.shortcuts import render, redirect, get_object_or_404
 from .models import Person
 from .forms import PersonForm, CPFForm
 from django.contrib.auth.decorators import login_required
+from django.http import HttpResponse
+from django.template.loader import get_template
+import xhtml2pdf.pisa as pisa
+import io
+from django.views.generic.base import View
+from django.db.models import Count
 
 
 # So pode ser acessado com login
@@ -72,3 +78,32 @@ def new_document(request):
         return redirect('person_list')
     return render(request, 'clientes/document_form.html', {'form': form})
 
+
+class Render:
+    @staticmethod
+    def render(path: str, params: dict, filename: str):
+        template = get_template(path)
+        html = template.render(params)
+        response = io.BytesIO()
+        pdf = pisa.pisaDocument(
+            io.BytesIO(html.encode("UTF-8")), response
+        )
+        if not pdf.err:
+            response = HttpResponse(
+                response.getvalue(), content_type='application/pdf'
+            )
+            response['Content-Disposition'] = 'attachment;filename=%s.pdf' % filename
+            return response
+        else:
+            return HttpResponse("Error Rendering PDF", status=400)
+
+
+class Pdf(View):
+    def get(self, request):
+        pessoas = Person.objects.all()
+        params = {
+            'pessoas': pessoas,
+            'num_pessoas': pessoas.aggregate(Count('id'))['id__count'],
+            'request': request,
+        }
+        return Render.render('clientes/relatorio.html', params, 'relatorio_pessoas')
