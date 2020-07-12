@@ -20,7 +20,7 @@ execute os comandos:
 4.3 - 'CREATE USER 'nome_do_usuario'@'localhost' IDENTIFIED BY 'senha';'   
 4.4 - 'GRANT ALL ON db_mysite.* TO 'nome_do_usuario'@'localhost';'   
 4.5 - 'FLUSH PRIVILEGES;   
-5. - Execute o comando 'pip install requirements-dev.txt' para instalar o necessário para rodar a aplicação   
+5. Execute o comando 'pip install requirements-dev.txt' para instalar o necessário para rodar a aplicação   
 6. Abra a pasta CRUD, abra o código 'settings.py', atualize as configurações do banco de dados:    
 DATABASES = {   
     'default': {   
