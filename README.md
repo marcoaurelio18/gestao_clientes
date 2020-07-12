@@ -37,8 +37,8 @@ DATABASES = {
 9. Execute o comando 'python manage.py createsuperuser' para criar um super usuario   
 10. Execute o comando 'python manage.py runserver' para rodar o servidor   
 
-*OBS1:* Certifique-se de que o computador tenha o python, o pip e o MySQL instalado corretamente   
-*OBS2:* Para um melhor aproveitamento da aplicação, em settings.py, coloque seu email (gmail) e a senha do email nas variaveis  'EMAIL_HOST_USER' e 'EMAIL_HOST_PASSWORD':   
+**OBS1:** Certifique-se de que o computador tenha o python, o pip e o MySQL instalado corretamente   
+**OBS2:** Para um melhor aproveitamento da aplicação, em settings.py, coloque seu email (gmail) e a senha do email nas variaveis  'EMAIL_HOST_USER' e 'EMAIL_HOST_PASSWORD':   
 EMAIL_HOST = 'smtp.gmail.com'   
 EMAIL_PORT = 587   
 EMAIL_HOST_USER = 'seuemailaqui@gmail.com'   
@@ -75,8 +75,8 @@ DATABASES = {
 9. Execute o comando 'python manage.py createsuperuser' para criar um super usuario   
 10. Execute o comando 'python manage.py runserver' para rodar o servidor   
   
-*OBS1:* Certifique-se de que o computador tenha o python, o pip e o MySQL instalado corretamente   
-*OBS2:* Para um melhor aproveitamento da aplicação, em settings.py, coloque seu email e a senha do email nas variaveis 'EMAIL_HOST_USER' e  'EMAIL_HOST_PASSWORD':   
+**OBS1:** Certifique-se de que o computador tenha o python, o pip e o MySQL instalado corretamente   
+**OBS2:** Para um melhor aproveitamento da aplicação, em settings.py, coloque seu email e a senha do email nas variaveis 'EMAIL_HOST_USER' e  'EMAIL_HOST_PASSWORD':   
 EMAIL_HOST = 'smtp.gmail.com'   
 EMAIL_PORT = 587   
 EMAIL_HOST_USER = 'seuemailaqui@gmail.com'   
