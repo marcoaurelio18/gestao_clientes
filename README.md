@@ -8,7 +8,7 @@ Para fazer login, tem que possuir um superusuario, o usuario e senha sao respect
 Como é um sistema de teste, os links de redes sociais no rodapé do site, não levam a lugar algum, ja que não é de nenhuma empresa real. 
 Data e hora no rodapé do site, é de acordo com a maquina em que o servidor está rodando. 
      
-##Para configurar a aplicação no windows:   
+## Para configurar a aplicação no windows:   
 1- Abra o terminal e va para o diretorio da aplicação   
 2- rode o comando 'python -m venv venv' para criar uma maquina virtual   
 3- rode o comando 'venv\Scrpits\activate' para ativá-la   
@@ -46,7 +46,7 @@ EMAIL_HOST_PASSWORD = 'senhadoemailaqui'
 EMAIL_USE_TLS = True   
 Dessa forma, ao utilizar o comando 'Esqueci minha senha' da aplicação, chegará um link no email para poder resetá-la   
 
-##Para configurar a aplicação no linux\Mac Os:   
+## Para configurar a aplicação no linux\Mac Os:   
 1- Abra o terminal e va para o diretorio da aplicação   
 2- rode o comando 'python -m venv venv' para criar uma maquina virtual   
 3- rode o comando '. venv\bin\activate' para ativá-la   
