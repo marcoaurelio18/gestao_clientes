@@ -1,6 +1,6 @@
 # CRUD
-Sobre:
-É um sistema simples, de gestao de cadastro de clientes, possui apenas a home e a página de clientes, onde se cadastra um cliente, 
+Sobre:  
+É um sistema simples, feito em Python/Django, de gestao de cadastro de clientes, possui apenas a home e a página de clientes, onde se cadastra um cliente, 
 acessa a lista de clientes cadastrados, exclui um cliente cadastrado, busca clientes pelo nome. 
 Cada cliente possui apenas um documento, entao, para garantir que nenhum documento seja usado duas vezes, ao criar um cliente, 
 deve-se criar um documento e, dessa forma, associar o documento a ele. 
