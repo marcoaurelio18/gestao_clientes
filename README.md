@@ -1,4 +1,4 @@
-# CRUD
+# Gestao Clientes
 Sobre:  
 É um sistema simples, feito em Python/Django, de gestao de cadastro de clientes, possui apenas a home e a página de clientes, onde se cadastra um cliente, 
 acessa a lista de clientes cadastrados, exclui um cliente cadastrado, busca clientes pelo nome. 
